@@ -1,0 +1,273 @@
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+
+  --white: #ffffff;
+  --white300: #f9f9f9;
+
+  --title: #2b2b2b;
+  --text: #555555;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+
+body{
+  background-color: var(--white300);
+}
+
+.home{
+  background-color: var(--bgSite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-left, .home-right{
+  padding: 100px;
+}
+
+.home .home-left h1{
+  color: var(--title);
+  font-size: 36px;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.home .home-left p{
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 45px;
+}
+
+.home .home-left button{
+  color: var(--white);
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  background-color: var(--buttonColor);
+  padding: 14px 50px;
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cards{
+  display: flex;
+  margin: 150px 100px;
+  justify-content: space-between;
+  gap: 120px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards .card{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cards h2{
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 24px 0 24px 30px;
+}
+
+.cards p{
+  color: var(--text);
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 18px;
+  padding: 0 30px 30px 30px;
+}
+
+.cards .card-color-1{
+  background: #FF6363;
+  width: 340px;
+  height: 222px;
+  display: block;
+}
+
+.cards .card-color-2{
+  background: #63ECFF;
+  width: 340px;
+  height: 222px;
+  display: block;
+}
+
+.cards .card-color-3{
+  background: #F363FF;
+  width: 340px;
+  height: 222px;
+  display: block;
+}
+
+.cards .card-color-4{
+  background: #63FF73;
+  width: 340px;
+  height: 222px;
+  display: block;
+}
+
+.cards .card-color-5{
+  background: #FFDD63;
+  width: 340px;
+  height: 222px;
+  display: block;
+}
+
+.cards .card-color-6{
+  background: #6663FF;
+  width: 340px;
+  height: 222px;
+  display: block;
+}
+
+.form{
+  background-color: var(--bgSite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form form{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.form h1{
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.form input{
+  margin-bottom: 15px;
+  height: 65px;
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+.form input::placeholder{
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 18px;
+  padding: 20px 0 20px 15px;
+  color: rgba(110, 114, 117, 0.74);
+}
+
+.form textarea::placeholder{
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: rgba(110, 114, 117, 0.74);
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.form textarea{
+  border: none;
+  background-color: var(--white);
+  border-radius: 6px;
+  resize: none;
+  outline: none;
+  height: 165px;
+}
+
+.form button{
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: var(--buttonColor);
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  text-align: center;
+  color: var(--white);
+  padding: 13px 0;
+  font-size: 20px;
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 500px){
+  .home-left, .home-right{
+    padding: 50px 20px;
+  }
+  .home .home-left h1{
+    font-size: 32px;
+  }
+  .home .home-left p{
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .cards{
+    margin: 75px 20px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .form form{
+    margin: 60px 20px;
+  }
+
+  .form h1{
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .form input{
+    margin-bottom: 20px;
+  }
+  .form button{
+    margin-top: 45px;
+  } 
+}
+
+@media screen and (max-width: 380px){
+  .form input{
+    margin: 0 20px 20px 20px;
+  }
+  .form .text{
+    margin: 0 20px 20px 20px;
+  }
+}
+
+
